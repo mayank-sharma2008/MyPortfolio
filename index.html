@@ -42,12 +42,7 @@
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html { scroll-behavior: smooth; }
-    body {
-      font-family: 'Manrope', sans-serif;
-      background: #F7F5F0;
-      color: #2D2420;
-      overflow-x: hidden;
-    }
+    body { font-family: 'Manrope', sans-serif; background: #F7F5F0; color: #2D2420; overflow-x: hidden; }
 
     .grain {
       position: fixed; inset: 0; pointer-events: none; z-index: 50;
@@ -90,10 +85,7 @@
 
     .hero-decor:hover .spin-slow { animation-duration: 2s; }
 
-    input:focus, textarea:focus {
-      outline: none;
-      border-color: #F7F5F0;
-    }
+    input:focus, textarea:focus { outline: none; border-color: #F7F5F0; }
 
     .toast {
       position: fixed; bottom: 2rem; right: 2rem; z-index: 60;
@@ -106,35 +98,20 @@
     }
     .toast.show { transform: translateY(0); opacity: 1; }
 
-    .mobile-menu {
-      transform: translateX(100%);
-      transition: transform 300ms ease;
-    }
+    .mobile-menu { transform: translateX(100%); transition: transform 300ms ease; }
     .mobile-menu.open { transform: translateX(0); }
 
     .btn-sending { opacity: 0.7; pointer-events: none; }
 
-    .reveal {
-      opacity: 0; transform: translateY(30px);
-      transition: opacity 0.8s ease, transform 0.8s ease;
-    }
+    .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease, transform 0.8s ease; }
     .reveal.visible { opacity: 1; transform: translateY(0); }
 
-    .section-divider {
-      height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(45,36,32,0.1), transparent);
-    }
+    .section-divider { height: 1px; background: linear-gradient(90deg, transparent, rgba(45,36,32,0.1), transparent); }
 
-    @keyframes livePulse {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.5; }
-    }
+    @keyframes livePulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
     .live-dot { animation: livePulse 2s ease-in-out infinite; }
 
-    .tech-badge:hover {
-      border-color: rgba(45,36,32,0.3);
-      background: #E6E1D6;
-    }
+    .tech-badge:hover { border-color: rgba(45,36,32,0.3); background: #E6E1D6; }
     .tech-badge { transition: all 150ms ease; }
   </style>
 </head>
@@ -160,9 +137,7 @@
 
   <!-- Mobile Menu -->
   <div id="mobileMenu" class="mobile-menu fixed inset-0 z-50 bg-coffee flex flex-col items-center justify-center gap-8">
-    <button id="menuClose" class="absolute top-4 right-6 text-cream" aria-label="Close menu">
-      <iconify-icon icon="lucide:x" width="28" height="28"></iconify-icon>
-    </button>
+    <button id="menuClose" class="absolute top-4 right-6 text-cream" aria-label="Close menu"><iconify-icon icon="lucide:x" width="28" height="28"></iconify-icon></button>
     <a href="#about" class="mobile-link text-cream font-syne text-3xl font-medium tracking-tight">About</a>
     <a href="#skills" class="mobile-link text-cream font-syne text-3xl font-medium tracking-tight">Skills</a>
     <a href="#projects" class="mobile-link text-cream font-syne text-3xl font-medium tracking-tight">Projects</a>
@@ -170,7 +145,7 @@
     <a href="#contact" class="mobile-link text-cream font-syne text-3xl font-medium tracking-tight">Contact</a>
   </div>
 
-  <!-- ======== HERO (development-themed background) ======== -->
+  <!-- ======== HERO ======== -->
   <section class="min-h-screen flex flex-col justify-end relative overflow-hidden">
     <div class="absolute inset-0">
       <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1920&h=1080&fit=crop" alt="Code on screen" class="w-full h-full object-cover grayscale opacity-20">
@@ -189,17 +164,9 @@
         I help businesses and founders get clean, functional websites built fast — using the latest AI-powered development tools so you get more, for less.
       </p>
       <div class="mt-8 flex flex-wrap gap-4 items-center">
-        <a href="#contact" class="inline-flex items-center gap-2 bg-coffee text-cream px-6 py-3 rounded-sm text-xs tracking-widest uppercase hover:bg-accent transition-colors duration-150 cursor-grab">
-          Start a Project
-          <iconify-icon icon="lucide:arrow-up-right" width="14" height="14"></iconify-icon>
-        </a>
-        <a href="#projects" class="inline-flex items-center gap-2 border border-coffee/20 px-6 py-3 rounded-sm text-xs tracking-widest uppercase hover:border-coffee/60 transition-colors duration-150 cursor-grab">
-          View Work
-        </a>
-        <a href="https://github.com/mayank-sharma2008" target="_blank" rel="noopener" class="inline-flex items-center gap-2 border border-coffee/20 px-6 py-3 rounded-sm text-xs tracking-widest uppercase hover:border-coffee/60 transition-colors duration-150 cursor-grab">
-          <iconify-icon icon="mdi:github" width="14" height="14"></iconify-icon>
-          GitHub
-        </a>
+        <a href="#contact" class="inline-flex items-center gap-2 bg-coffee text-cream px-6 py-3 rounded-sm text-xs tracking-widest uppercase hover:bg-accent transition-colors duration-150 cursor-grab">Start a Project <iconify-icon icon="lucide:arrow-up-right" width="14" height="14"></iconify-icon></a>
+        <a href="#projects" class="inline-flex items-center gap-2 border border-coffee/20 px-6 py-3 rounded-sm text-xs tracking-widest uppercase hover:border-coffee/60 transition-colors duration-150 cursor-grab">View Work</a>
+        <a href="https://github.com/mayank-sharma2008" target="_blank" rel="noopener" class="inline-flex items-center gap-2 border border-coffee/20 px-6 py-3 rounded-sm text-xs tracking-widest uppercase hover:border-coffee/60 transition-colors duration-150 cursor-grab"><iconify-icon icon="mdi:github" width="14" height="14"></iconify-icon> GitHub</a>
       </div>
     </div>
   </section>
@@ -208,32 +175,20 @@
   <div class="py-4 border-y border-coffee/10 overflow-hidden">
     <div class="marquee-track flex whitespace-nowrap" style="width: max-content;">
       <span class="flex items-center gap-8 px-4">
-        <span class="text-xs tracking-widest uppercase text-coffee/40">Vibe Coding</span>
-        <iconify-icon icon="lucide:asterisk" width="12" height="12" class="text-coffee/20"></iconify-icon>
-        <span class="text-xs tracking-widest uppercase text-coffee/40">AI-Powered</span>
-        <iconify-icon icon="lucide:asterisk" width="12" height="12" class="text-coffee/20"></iconify-icon>
-        <span class="text-xs tracking-widest uppercase text-coffee/40">Fast Delivery</span>
-        <iconify-icon icon="lucide:asterisk" width="12" height="12" class="text-coffee/20"></iconify-icon>
-        <span class="text-xs tracking-widest uppercase text-coffee/40">Clean Code</span>
-        <iconify-icon icon="lucide:asterisk" width="12" height="12" class="text-coffee/20"></iconify-icon>
-        <span class="text-xs tracking-widest uppercase text-coffee/40">Responsive</span>
-        <iconify-icon icon="lucide:asterisk" width="12" height="12" class="text-coffee/20"></iconify-icon>
-        <span class="text-xs tracking-widest uppercase text-coffee/40">Smart Workflow</span>
-        <iconify-icon icon="lucide:asterisk" width="12" height="12" class="text-coffee/20"></iconify-icon>
+        <span class="text-xs tracking-widest uppercase text-coffee/40">Vibe Coding</span><iconify-icon icon="lucide:asterisk" width="12" height="12" class="text-coffee/20"></iconify-icon>
+        <span class="text-xs tracking-widest uppercase text-coffee/40">AI-Powered</span><iconify-icon icon="lucide:asterisk" width="12" height="12" class="text-coffee/20"></iconify-icon>
+        <span class="text-xs tracking-widest uppercase text-coffee/40">Fast Delivery</span><iconify-icon icon="lucide:asterisk" width="12" height="12" class="text-coffee/20"></iconify-icon>
+        <span class="text-xs tracking-widest uppercase text-coffee/40">Clean Code</span><iconify-icon icon="lucide:asterisk" width="12" height="12" class="text-coffee/20"></iconify-icon>
+        <span class="text-xs tracking-widest uppercase text-coffee/40">Responsive</span><iconify-icon icon="lucide:asterisk" width="12" height="12" class="text-coffee/20"></iconify-icon>
+        <span class="text-xs tracking-widest uppercase text-coffee/40">Smart Workflow</span><iconify-icon icon="lucide:asterisk" width="12" height="12" class="text-coffee/20"></iconify-icon>
       </span>
       <span class="flex items-center gap-8 px-4">
-        <span class="text-xs tracking-widest uppercase text-coffee/40">Vibe Coding</span>
-        <iconify-icon icon="lucide:asterisk" width="12" height="12" class="text-coffee/20"></iconify-icon>
-        <span class="text-xs tracking-widest uppercase text-coffee/40">AI-Powered</span>
-        <iconify-icon icon="lucide:asterisk" width="12" height="12" class="text-coffee/20"></iconify-icon>
-        <span class="text-xs tracking-widest uppercase text-coffee/40">Fast Delivery</span>
-        <iconify-icon icon="lucide:asterisk" width="12" height="12" class="text-coffee/20"></iconify-icon>
-        <span class="text-xs tracking-widest uppercase text-coffee/40">Clean Code</span>
-        <iconify-icon icon="lucide:asterisk" width="12" height="12" class="text-coffee/20"></iconify-icon>
-        <span class="text-xs tracking-widest uppercase text-coffee/40">Responsive</span>
-        <iconify-icon icon="lucide:asterisk" width="12" height="12" class="text-coffee/20"></iconify-icon>
-        <span class="text-xs tracking-widest uppercase text-coffee/40">Smart Workflow</span>
-        <iconify-icon icon="lucide:asterisk" width="12" height="12" class="text-coffee/20"></iconify-icon>
+        <span class="text-xs tracking-widest uppercase text-coffee/40">Vibe Coding</span><iconify-icon icon="lucide:asterisk" width="12" height="12" class="text-coffee/20"></iconify-icon>
+        <span class="text-xs tracking-widest uppercase text-coffee/40">AI-Powered</span><iconify-icon icon="lucide:asterisk" width="12" height="12" class="text-coffee/20"></iconify-icon>
+        <span class="text-xs tracking-widest uppercase text-coffee/40">Fast Delivery</span><iconify-icon icon="lucide:asterisk" width="12" height="12" class="text-coffee/20"></iconify-icon>
+        <span class="text-xs tracking-widest uppercase text-coffee/40">Clean Code</span><iconify-icon icon="lucide:asterisk" width="12" height="12" class="text-coffee/20"></iconify-icon>
+        <span class="text-xs tracking-widest uppercase text-coffee/40">Responsive</span><iconify-icon icon="lucide:asterisk" width="12" height="12" class="text-coffee/20"></iconify-icon>
+        <span class="text-xs tracking-widest uppercase text-coffee/40">Smart Workflow</span><iconify-icon icon="lucide:asterisk" width="12" height="12" class="text-coffee/20"></iconify-icon>
       </span>
     </div>
   </div>
@@ -254,27 +209,12 @@
         </div>
         <div class="md:col-span-7 flex flex-col justify-center">
           <h2 class="font-syne font-medium text-4xl md:text-5xl tracking-tighter text-coffee mb-8">I'm Mayank.</h2>
-          <p class="text-base md:text-lg font-light leading-relaxed text-coffee/70 mb-6">
-            I'm a web developer who builds with vibe coding — a modern approach where I combine my technical instincts with AI tools to ship websites faster and smarter. I don't just write code, I know how to direct it, shape it, and make it actually work for real people.
-          </p>
-          <p class="text-base md:text-lg font-light leading-relaxed text-coffee/70 mb-6">
-            I care about clean results, clear communication, and not wasting your time.
-          </p>
-          <p class="text-base md:text-lg font-light leading-relaxed text-coffee/70">
-            Right now I'm open to freelance projects — whether you need a portfolio, a landing page, or a full web presence built from scratch.
-          </p>
+          <p class="text-base md:text-lg font-light leading-relaxed text-coffee/70 mb-6">I'm a web developer who builds with vibe coding — a modern approach where I combine my technical instincts with AI tools to ship websites faster and smarter. I don't just write code, I know how to direct it, shape it, and make it actually work for real people.</p>
+          <p class="text-base md:text-lg font-light leading-relaxed text-coffee/70 mb-6">I care about clean results, clear communication, and not wasting your time.</p>
+          <p class="text-base md:text-lg font-light leading-relaxed text-coffee/70">Right now I'm open to freelance projects — whether you need a portfolio, a landing page, or a full web presence built from scratch.</p>
           <div class="mt-10 flex items-center gap-4 flex-wrap">
-            <span class="flex items-center gap-3">
-              <span class="relative flex h-3 w-3">
-                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
-                <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
-              </span>
-              <span class="text-xs tracking-widest uppercase text-coffee/50">Available for freelance</span>
-            </span>
-            <a href="https://github.com/mayank-sharma2008" target="_blank" rel="noopener" class="flex items-center gap-2 text-xs tracking-widest uppercase text-coffee/40 hover:text-coffee transition-colors duration-150">
-              <iconify-icon icon="mdi:github" width="14" height="14"></iconify-icon>
-              GitHub
-            </a>
+            <span class="flex items-center gap-3"><span class="relative flex h-3 w-3"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span><span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span></span><span class="text-xs tracking-widest uppercase text-coffee/50">Available for freelance</span></span>
+            <a href="https://github.com/mayank-sharma2008" target="_blank" rel="noopener" class="flex items-center gap-2 text-xs tracking-widest uppercase text-coffee/40 hover:text-coffee transition-colors duration-150"><iconify-icon icon="mdi:github" width="14" height="14"></iconify-icon> GitHub</a>
           </div>
         </div>
       </div>
@@ -286,95 +226,44 @@
   <!-- ======== SKILLS ======== -->
   <section id="skills" class="py-24 px-4 md:px-8 bg-sub1 reveal">
     <div class="max-w-7xl mx-auto">
-      <div class="flex items-center gap-4 mb-12">
-        <span class="text-xs tracking-widest uppercase text-coffee/40">02</span>
-        <div class="h-px flex-1 bg-coffee/10"></div>
-        <span class="text-xs tracking-widest uppercase text-coffee/40">Skills</span>
-      </div>
+      <div class="flex items-center gap-4 mb-12"><span class="text-xs tracking-widest uppercase text-coffee/40">02</span><div class="h-px flex-1 bg-coffee/10"></div><span class="text-xs tracking-widest uppercase text-coffee/40">Skills</span></div>
       <h2 class="font-syne font-medium text-4xl md:text-5xl tracking-tighter text-coffee mb-16">What I Bring<br>to the Table.</h2>
-
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
         <div class="skill-card group bg-cream rounded-sm p-6 border border-coffee/10 hover:bg-sub2 transition-colors duration-150 cursor-grab">
           <span class="skill-num block text-xs tracking-widest uppercase text-coffee/30 mb-6">01</span>
-          <div class="flex items-start justify-between mb-6">
-            <div class="w-12 h-12 rounded-full bg-coffee/5 flex items-center justify-center">
-              <iconify-icon icon="lucide:zap" width="20" height="20" class="text-accent"></iconify-icon>
-            </div>
-            <iconify-icon icon="lucide:arrow-up-right" width="16" height="16" class="skill-arrow text-coffee/30"></iconify-icon>
-          </div>
+          <div class="flex items-start justify-between mb-6"><div class="w-12 h-12 rounded-full bg-coffee/5 flex items-center justify-center"><iconify-icon icon="lucide:zap" width="20" height="20" class="text-accent"></iconify-icon></div><iconify-icon icon="lucide:arrow-up-right" width="16" height="16" class="skill-arrow text-coffee/30"></iconify-icon></div>
           <h3 class="font-syne font-medium text-xl md:text-2xl tracking-tight text-coffee mb-4">Vibe Coding</h3>
           <p class="text-sm font-light leading-relaxed text-coffee/60">I use AI-assisted development to build functional, well-structured websites at a pace traditional development can't match.</p>
         </div>
         <div class="skill-card group bg-cream rounded-sm p-6 border border-coffee/10 hover:bg-sub2 transition-colors duration-150 cursor-grab">
           <span class="skill-num block text-xs tracking-widest uppercase text-coffee/30 mb-6">02</span>
-          <div class="flex items-start justify-between mb-6">
-            <div class="w-12 h-12 rounded-full bg-coffee/5 flex items-center justify-center">
-              <iconify-icon icon="lucide:cpu" width="20" height="20" class="text-accent"></iconify-icon>
-            </div>
-            <iconify-icon icon="lucide:arrow-up-right" width="16" height="16" class="skill-arrow text-coffee/30"></iconify-icon>
-          </div>
+          <div class="flex items-start justify-between mb-6"><div class="w-12 h-12 rounded-full bg-coffee/5 flex items-center justify-center"><iconify-icon icon="lucide:cpu" width="20" height="20" class="text-accent"></iconify-icon></div><iconify-icon icon="lucide:arrow-up-right" width="16" height="16" class="skill-arrow text-coffee/30"></iconify-icon></div>
           <h3 class="font-syne font-medium text-xl md:text-2xl tracking-tight text-coffee mb-4">AI Literacy</h3>
           <p class="text-sm font-light leading-relaxed text-coffee/60">I know which tools to use, when to use them, and how to get output that doesn't need to be thrown away and rewritten.</p>
         </div>
         <div class="skill-card group bg-cream rounded-sm p-6 border border-coffee/10 hover:bg-sub2 transition-colors duration-150 cursor-grab">
           <span class="skill-num block text-xs tracking-widest uppercase text-coffee/30 mb-6">03</span>
-          <div class="flex items-start justify-between mb-6">
-            <div class="w-12 h-12 rounded-full bg-coffee/5 flex items-center justify-center">
-              <iconify-icon icon="lucide:code-2" width="20" height="20" class="text-accent"></iconify-icon>
-            </div>
-            <iconify-icon icon="lucide:arrow-up-right" width="16" height="16" class="skill-arrow text-coffee/30"></iconify-icon>
-          </div>
+          <div class="flex items-start justify-between mb-6"><div class="w-12 h-12 rounded-full bg-coffee/5 flex items-center justify-center"><iconify-icon icon="lucide:code-2" width="20" height="20" class="text-accent"></iconify-icon></div><iconify-icon icon="lucide:arrow-up-right" width="16" height="16" class="skill-arrow text-coffee/30"></iconify-icon></div>
           <h3 class="font-syne font-medium text-xl md:text-2xl tracking-tight text-coffee mb-4">Web Development</h3>
           <p class="text-sm font-light leading-relaxed text-coffee/60">From layout to logic, I build sites that look sharp, load fast, and actually do what they're supposed to.</p>
         </div>
       </div>
-
-      <!-- Tech Stack & Tools -->
       <div class="bg-cream rounded-sm p-6 md:p-8 border border-coffee/10">
-        <div class="flex items-center gap-3 mb-6">
-          <iconify-icon icon="lucide:wrench" width="16" height="16" class="text-accent"></iconify-icon>
-          <h3 class="font-syne font-medium text-lg tracking-tight text-coffee">Tech Stack & Tools</h3>
-        </div>
+        <div class="flex items-center gap-3 mb-6"><iconify-icon icon="lucide:wrench" width="16" height="16" class="text-accent"></iconify-icon><h3 class="font-syne font-medium text-lg tracking-tight text-coffee">Tech Stack & Tools</h3></div>
         <div class="flex flex-wrap gap-2">
-          <span class="tech-badge inline-flex items-center gap-1.5 border border-coffee/10 px-3 py-1.5 rounded-sm text-xs tracking-wider text-coffee/60">
-            <iconify-icon icon="mdi:language-html5" width="14" height="14"></iconify-icon> HTML5
-          </span>
-          <span class="tech-badge inline-flex items-center gap-1.5 border border-coffee/10 px-3 py-1.5 rounded-sm text-xs tracking-wider text-coffee/60">
-            <iconify-icon icon="mdi:language-css3" width="14" height="14"></iconify-icon> CSS3
-          </span>
-          <span class="tech-badge inline-flex items-center gap-1.5 border border-coffee/10 px-3 py-1.5 rounded-sm text-xs tracking-wider text-coffee/60">
-            <iconify-icon icon="mdi:language-javascript" width="14" height="14"></iconify-icon> JavaScript
-          </span>
-          <span class="tech-badge inline-flex items-center gap-1.5 border border-coffee/10 px-3 py-1.5 rounded-sm text-xs tracking-wider text-coffee/60">
-            <iconify-icon icon="mdi:tailwind" width="14" height="14"></iconify-icon> Tailwind CSS
-          </span>
-          <span class="tech-badge inline-flex items-center gap-1.5 border border-coffee/10 px-3 py-1.5 rounded-sm text-xs tracking-wider text-coffee/60">
-            <iconify-icon icon="mdi:react" width="14" height="14"></iconify-icon> React
-          </span>
-          <span class="tech-badge inline-flex items-center gap-1.5 border border-coffee/10 px-3 py-1.5 rounded-sm text-xs tracking-wider text-coffee/60">
-            <iconify-icon icon="mdi:nodejs" width="14" height="14"></iconify-icon> Node.js
-          </span>
-          <span class="tech-badge inline-flex items-center gap-1.5 border border-coffee/10 px-3 py-1.5 rounded-sm text-xs tracking-wider text-coffee/60">
-            <iconify-icon icon="mdi:git" width="14" height="14"></iconify-icon> Git
-          </span>
-          <span class="tech-badge inline-flex items-center gap-1.5 border border-coffee/10 px-3 py-1.5 rounded-sm text-xs tracking-wider text-coffee/60">
-            <iconify-icon icon="mdi:github" width="14" height="14"></iconify-icon> GitHub
-          </span>
-          <span class="tech-badge inline-flex items-center gap-1.5 border border-coffee/10 px-3 py-1.5 rounded-sm text-xs tracking-wider text-coffee/60">
-            <iconify-icon icon="mdi:microsoft-visual-studio-code" width="14" height="14"></iconify-icon> VS Code
-          </span>
-          <span class="tech-badge inline-flex items-center gap-1.5 border border-coffee/10 px-3 py-1.5 rounded-sm text-xs tracking-wider text-coffee/60">
-            <iconify-icon icon="lucide:cpu" width="14" height="14"></iconify-icon> Cursor AI
-          </span>
-          <span class="tech-badge inline-flex items-center gap-1.5 border border-coffee/10 px-3 py-1.5 rounded-sm text-xs tracking-wider text-coffee/60">
-            <iconify-icon icon="lucide:sparkles" width="14" height="14"></iconify-icon> ChatGPT / Claude
-          </span>
-          <span class="tech-badge inline-flex items-center gap-1.5 border border-coffee/10 px-3 py-1.5 rounded-sm text-xs tracking-wider text-coffee/60">
-            <iconify-icon icon="mdi:vercel" width="14" height="14"></iconify-icon> Vercel
-          </span>
-          <span class="tech-badge inline-flex items-center gap-1.5 border border-coffee/10 px-3 py-1.5 rounded-sm text-xs tracking-wider text-coffee/60">
-            <iconify-icon icon="mdi:github" width="14" height="14"></iconify-icon> GitHub Pages
-          </span>
+          <span class="tech-badge inline-flex items-center gap-1.5 border border-coffee/10 px-3 py-1.5 rounded-sm text-xs tracking-wider text-coffee/60"><iconify-icon icon="mdi:language-html5" width="14" height="14"></iconify-icon> HTML5</span>
+          <span class="tech-badge inline-flex items-center gap-1.5 border border-coffee/10 px-3 py-1.5 rounded-sm text-xs tracking-wider text-coffee/60"><iconify-icon icon="mdi:language-css3" width="14" height="14"></iconify-icon> CSS3</span>
+          <span class="tech-badge inline-flex items-center gap-1.5 border border-coffee/10 px-3 py-1.5 rounded-sm text-xs tracking-wider text-coffee/60"><iconify-icon icon="mdi:language-javascript" width="14" height="14"></iconify-icon> JavaScript</span>
+          <span class="tech-badge inline-flex items-center gap-1.5 border border-coffee/10 px-3 py-1.5 rounded-sm text-xs tracking-wider text-coffee/60"><iconify-icon icon="mdi:tailwind" width="14" height="14"></iconify-icon> Tailwind CSS</span>
+          <span class="tech-badge inline-flex items-center gap-1.5 border border-coffee/10 px-3 py-1.5 rounded-sm text-xs tracking-wider text-coffee/60"><iconify-icon icon="mdi:react" width="14" height="14"></iconify-icon> React</span>
+          <span class="tech-badge inline-flex items-center gap-1.5 border border-coffee/10 px-3 py-1.5 rounded-sm text-xs tracking-wider text-coffee/60"><iconify-icon icon="mdi:nodejs" width="14" height="14"></iconify-icon> Node.js</span>
+          <span class="tech-badge inline-flex items-center gap-1.5 border border-coffee/10 px-3 py-1.5 rounded-sm text-xs tracking-wider text-coffee/60"><iconify-icon icon="mdi:git" width="14" height="14"></iconify-icon> Git</span>
+          <span class="tech-badge inline-flex items-center gap-1.5 border border-coffee/10 px-3 py-1.5 rounded-sm text-xs tracking-wider text-coffee/60"><iconify-icon icon="mdi:github" width="14" height="14"></iconify-icon> GitHub</span>
+          <span class="tech-badge inline-flex items-center gap-1.5 border border-coffee/10 px-3 py-1.5 rounded-sm text-xs tracking-wider text-coffee/60"><iconify-icon icon="mdi:microsoft-visual-studio-code" width="14" height="14"></iconify-icon> VS Code</span>
+          <span class="tech-badge inline-flex items-center gap-1.5 border border-coffee/10 px-3 py-1.5 rounded-sm text-xs tracking-wider text-coffee/60"><iconify-icon icon="lucide:cpu" width="14" height="14"></iconify-icon> Cursor AI</span>
+          <span class="tech-badge inline-flex items-center gap-1.5 border border-coffee/10 px-3 py-1.5 rounded-sm text-xs tracking-wider text-coffee/60"><iconify-icon icon="lucide:sparkles" width="14" height="14"></iconify-icon> ChatGPT / Claude</span>
+          <span class="tech-badge inline-flex items-center gap-1.5 border border-coffee/10 px-3 py-1.5 rounded-sm text-xs tracking-wider text-coffee/60"><iconify-icon icon="mdi:vercel" width="14" height="14"></iconify-icon> Vercel</span>
+          <span class="tech-badge inline-flex items-center gap-1.5 border border-coffee/10 px-3 py-1.5 rounded-sm text-xs tracking-wider text-coffee/60"><iconify-icon icon="mdi:github" width="14" height="14"></iconify-icon> GitHub Pages</span>
         </div>
       </div>
     </div>
@@ -383,15 +272,12 @@
   <!-- ======== PROJECTS ======== -->
   <section id="projects" class="py-24 px-4 md:px-8 reveal">
     <div class="max-w-7xl mx-auto">
-      <div class="flex items-center gap-4 mb-12">
-        <span class="text-xs tracking-widest uppercase text-coffee/40">03</span>
-        <div class="h-px flex-1 bg-coffee/10"></div>
-        <span class="text-xs tracking-widest uppercase text-coffee/40">Projects</span>
-      </div>
+      <div class="flex items-center gap-4 mb-12"><span class="text-xs tracking-widest uppercase text-coffee/40">03</span><div class="h-px flex-1 bg-coffee/10"></div><span class="text-xs tracking-widest uppercase text-coffee/40">Projects</span></div>
       <h2 class="font-syne font-medium text-4xl md:text-5xl tracking-tighter text-coffee mb-16">Recent Work.</h2>
+
       <div class="space-y-6">
 
-        <!-- PROJECT 1: Furniture Store -->
+        <!-- PROJECT 1: Furniture Store (LIVE) — Image Left -->
         <div class="project-card group border border-coffee/10 rounded-sm overflow-hidden hover:bg-sub1 transition-colors duration-150 cursor-grab">
           <div class="grid grid-cols-1 md:grid-cols-12 gap-0">
             <div class="md:col-span-5 overflow-hidden">
@@ -399,12 +285,7 @@
             </div>
             <div class="md:col-span-7 p-6 md:p-8 flex flex-col justify-center">
               <div class="flex items-center justify-between mb-4">
-                <div class="flex items-center gap-3">
-                  <span class="text-xs tracking-widest uppercase text-coffee/40">E-Commerce</span>
-                  <span class="inline-flex items-center gap-1.5 bg-green-500/10 text-green-600 text-[10px] tracking-widest uppercase px-2 py-0.5 rounded-sm">
-                    <span class="live-dot w-1.5 h-1.5 rounded-full bg-green-500 inline-block"></span>Live
-                  </span>
-                </div>
+                <div class="flex items-center gap-3"><span class="text-xs tracking-widest uppercase text-coffee/40">E-Commerce</span><span class="inline-flex items-center gap-1.5 bg-green-500/10 text-green-600 text-[10px] tracking-widest uppercase px-2 py-0.5 rounded-sm"><span class="live-dot w-1.5 h-1.5 rounded-full bg-green-500 inline-block"></span>Live</span></div>
                 <iconify-icon icon="lucide:arrow-up-right" width="16" height="16" class="project-arrow text-coffee/30"></iconify-icon>
               </div>
               <h3 class="font-syne font-medium text-2xl md:text-3xl tracking-tight text-coffee mb-4">Furniture Store</h3>
@@ -414,14 +295,12 @@
                 <span class="text-[10px] tracking-widest uppercase border border-coffee/10 px-3 py-1 rounded-sm text-coffee/40">E-Commerce</span>
                 <span class="text-[10px] tracking-widest uppercase border border-coffee/10 px-3 py-1 rounded-sm text-coffee/40">Responsive</span>
               </div>
-              <a href="https://mayank-sharma2008.github.io/furniture/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-coffee text-cream px-4 py-2 rounded-sm text-[10px] tracking-widest uppercase hover:bg-accent transition-colors duration-150 w-fit">
-                Visit Site <iconify-icon icon="lucide:external-link" width="12" height="12"></iconify-icon>
-              </a>
+              <a href="https://mayank-sharma2008.github.io/furniture/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-coffee text-cream px-4 py-2 rounded-sm text-[10px] tracking-widest uppercase hover:bg-accent transition-colors duration-150 w-fit">Visit Site <iconify-icon icon="lucide:external-link" width="12" height="12"></iconify-icon></a>
             </div>
           </div>
         </div>
 
-        <!-- PROJECT 2: Elevon -->
+        <!-- PROJECT 2: Elevon (LIVE) — Image Right -->
         <div class="project-card group border border-coffee/10 rounded-sm overflow-hidden hover:bg-sub1 transition-colors duration-150 cursor-grab">
           <div class="grid grid-cols-1 md:grid-cols-12 gap-0">
             <div class="md:col-span-5 overflow-hidden md:order-last">
@@ -429,12 +308,7 @@
             </div>
             <div class="md:col-span-7 p-6 md:p-8 flex flex-col justify-center md:order-first">
               <div class="flex items-center justify-between mb-4">
-                <div class="flex items-center gap-3">
-                  <span class="text-xs tracking-widest uppercase text-coffee/40">Beverage</span>
-                  <span class="inline-flex items-center gap-1.5 bg-green-500/10 text-green-600 text-[10px] tracking-widest uppercase px-2 py-0.5 rounded-sm">
-                    <span class="live-dot w-1.5 h-1.5 rounded-full bg-green-500 inline-block"></span>Live
-                  </span>
-                </div>
+                <div class="flex items-center gap-3"><span class="text-xs tracking-widest uppercase text-coffee/40">Beverage</span><span class="inline-flex items-center gap-1.5 bg-green-500/10 text-green-600 text-[10px] tracking-widest uppercase px-2 py-0.5 rounded-sm"><span class="live-dot w-1.5 h-1.5 rounded-full bg-green-500 inline-block"></span>Live</span></div>
                 <iconify-icon icon="lucide:arrow-up-right" width="16" height="16" class="project-arrow text-coffee/30"></iconify-icon>
               </div>
               <h3 class="font-syne font-medium text-2xl md:text-3xl tracking-tight text-coffee mb-4">Elevon</h3>
@@ -444,27 +318,43 @@
                 <span class="text-[10px] tracking-widest uppercase border border-coffee/10 px-3 py-1 rounded-sm text-coffee/40">Brand</span>
                 <span class="text-[10px] tracking-widest uppercase border border-coffee/10 px-3 py-1 rounded-sm text-coffee/40">JavaScript</span>
               </div>
-              <a href="https://mayank-sharma2008.github.io/Elevon/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-coffee text-cream px-4 py-2 rounded-sm text-[10px] tracking-widest uppercase hover:bg-accent transition-colors duration-150 w-fit">
-                Visit Site <iconify-icon icon="lucide:external-link" width="12" height="12"></iconify-icon>
-              </a>
+              <a href="https://mayank-sharma2008.github.io/Elevon/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-coffee text-cream px-4 py-2 rounded-sm text-[10px] tracking-widest uppercase hover:bg-accent transition-colors duration-150 w-fit">Visit Site <iconify-icon icon="lucide:external-link" width="12" height="12"></iconify-icon></a>
             </div>
           </div>
         </div>
 
-        <!-- PROJECT 3: More -->
+        <!-- PROJECT 3: WriteAI (LIVE) — Image Left -->
         <div class="project-card group border border-coffee/10 rounded-sm overflow-hidden hover:bg-sub1 transition-colors duration-150 cursor-grab">
           <div class="grid grid-cols-1 md:grid-cols-12 gap-0">
             <div class="md:col-span-5 overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop" alt="More" class="project-img w-full h-64 md:h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700">
+              <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop" alt="WriteAI" class="project-img w-full h-64 md:h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700">
             </div>
             <div class="md:col-span-7 p-6 md:p-8 flex flex-col justify-center">
               <div class="flex items-center justify-between mb-4">
-                <div class="flex items-center gap-3">
-                  <span class="text-xs tracking-widest uppercase text-coffee/40">Web Platform</span>
-                  <span class="inline-flex items-center gap-1.5 bg-green-500/10 text-green-600 text-[10px] tracking-widest uppercase px-2 py-0.5 rounded-sm">
-                    <span class="live-dot w-1.5 h-1.5 rounded-full bg-green-500 inline-block"></span>Live
-                  </span>
-                </div>
+                <div class="flex items-center gap-3"><span class="text-xs tracking-widest uppercase text-coffee/40">AI Tool</span><span class="inline-flex items-center gap-1.5 bg-green-500/10 text-green-600 text-[10px] tracking-widest uppercase px-2 py-0.5 rounded-sm"><span class="live-dot w-1.5 h-1.5 rounded-full bg-green-500 inline-block"></span>Live</span></div>
+                <iconify-icon icon="lucide:arrow-up-right" width="16" height="16" class="project-arrow text-coffee/30"></iconify-icon>
+              </div>
+              <h3 class="font-syne font-medium text-2xl md:text-3xl tracking-tight text-coffee mb-4">WriteAI</h3>
+              <p class="text-sm font-light leading-relaxed text-coffee/60 mb-6">A sleek AI-powered writing assistant designed to help users generate high-quality content faster. Clean interface, smart prompts, and a seamless experience from idea to output — built to make writing effortless.</p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span class="text-[10px] tracking-widest uppercase border border-coffee/10 px-3 py-1 rounded-sm text-coffee/40">React</span>
+                <span class="text-[10px] tracking-widest uppercase border border-coffee/10 px-3 py-1 rounded-sm text-coffee/40">AI / NLP</span>
+                <span class="text-[10px] tracking-widest uppercase border border-coffee/10 px-3 py-1 rounded-sm text-coffee/40">Vercel</span>
+              </div>
+              <a href="https://writeai-xi.vercel.app" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-coffee text-cream px-4 py-2 rounded-sm text-[10px] tracking-widest uppercase hover:bg-accent transition-colors duration-150 w-fit">Visit Site <iconify-icon icon="lucide:external-link" width="12" height="12"></iconify-icon></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 4: More (LIVE) — Image Right -->
+        <div class="project-card group border border-coffee/10 rounded-sm overflow-hidden hover:bg-sub1 transition-colors duration-150 cursor-grab">
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-0">
+            <div class="md:col-span-5 overflow-hidden md:order-last">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop" alt="More" class="project-img w-full h-64 md:h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700">
+            </div>
+            <div class="md:col-span-7 p-6 md:p-8 flex flex-col justify-center md:order-first">
+              <div class="flex items-center justify-between mb-4">
+                <div class="flex items-center gap-3"><span class="text-xs tracking-widest uppercase text-coffee/40">Web Platform</span><span class="inline-flex items-center gap-1.5 bg-green-500/10 text-green-600 text-[10px] tracking-widest uppercase px-2 py-0.5 rounded-sm"><span class="live-dot w-1.5 h-1.5 rounded-full bg-green-500 inline-block"></span>Live</span></div>
                 <iconify-icon icon="lucide:arrow-up-right" width="16" height="16" class="project-arrow text-coffee/30"></iconify-icon>
               </div>
               <h3 class="font-syne font-medium text-2xl md:text-3xl tracking-tight text-coffee mb-4">More</h3>
@@ -474,9 +364,7 @@
                 <span class="text-[10px] tracking-widest uppercase border border-coffee/10 px-3 py-1 rounded-sm text-coffee/40">Platform</span>
                 <span class="text-[10px] tracking-widest uppercase border border-coffee/10 px-3 py-1 rounded-sm text-coffee/40">Responsive</span>
               </div>
-              <a href="https://mayank-sharma2008.github.io/more/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-coffee text-cream px-4 py-2 rounded-sm text-[10px] tracking-widest uppercase hover:bg-accent transition-colors duration-150 w-fit">
-                Visit Site <iconify-icon icon="lucide:external-link" width="12" height="12"></iconify-icon>
-              </a>
+              <a href="https://mayank-sharma2008.github.io/more/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-coffee text-cream px-4 py-2 rounded-sm text-[10px] tracking-widest uppercase hover:bg-accent transition-colors duration-150 w-fit">Visit Site <iconify-icon icon="lucide:external-link" width="12" height="12"></iconify-icon></a>
             </div>
           </div>
         </div>
@@ -488,87 +376,34 @@
   <!-- ======== TESTIMONIALS ======== -->
   <section id="testimonials" class="py-24 px-4 md:px-8 bg-sub1 reveal">
     <div class="max-w-7xl mx-auto">
-      <div class="flex items-center gap-4 mb-12">
-        <span class="text-xs tracking-widest uppercase text-coffee/40">04</span>
-        <div class="h-px flex-1 bg-coffee/10"></div>
-        <span class="text-xs tracking-widest uppercase text-coffee/40">Praise</span>
-      </div>
+      <div class="flex items-center gap-4 mb-12"><span class="text-xs tracking-widest uppercase text-coffee/40">04</span><div class="h-px flex-1 bg-coffee/10"></div><span class="text-xs tracking-widest uppercase text-coffee/40">Praise</span></div>
       <h2 class="font-syne font-medium text-4xl md:text-5xl tracking-tighter text-coffee mb-16">Kind Words<br>From Clients.</h2>
-
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div class="bg-cream rounded-sm p-6 md:p-8 border border-coffee/10 flex flex-col justify-between">
           <div>
-            <div class="flex gap-1 mb-6">
-              <iconify-icon icon="lucide:star" width="14" height="14" class="text-accent"></iconify-icon>
-              <iconify-icon icon="lucide:star" width="14" height="14" class="text-accent"></iconify-icon>
-              <iconify-icon icon="lucide:star" width="14" height="14" class="text-accent"></iconify-icon>
-              <iconify-icon icon="lucide:star" width="14" height="14" class="text-accent"></iconify-icon>
-              <iconify-icon icon="lucide:star" width="14" height="14" class="text-accent"></iconify-icon>
-            </div>
-            <p class="text-base font-light leading-relaxed text-coffee/70 mb-8">
-              "Mayank delivered our landing page in under a week. The process was smooth, communication was clear, and the final site looked sharper than we imagined. He genuinely cares about getting it right."
-            </p>
+            <div class="flex gap-1 mb-6"><iconify-icon icon="lucide:star" width="14" height="14" class="text-accent"></iconify-icon><iconify-icon icon="lucide:star" width="14" height="14" class="text-accent"></iconify-icon><iconify-icon icon="lucide:star" width="14" height="14" class="text-accent"></iconify-icon><iconify-icon icon="lucide:star" width="14" height="14" class="text-accent"></iconify-icon><iconify-icon icon="lucide:star" width="14" height="14" class="text-accent"></iconify-icon></div>
+            <p class="text-base font-light leading-relaxed text-coffee/70 mb-8">"Mayank delivered our landing page in under a week. The process was smooth, communication was clear, and the final site looked sharper than we imagined. He genuinely cares about getting it right."</p>
           </div>
-          <div class="flex items-center gap-4">
-            <div class="w-10 h-10 rounded-full bg-coffee/5 flex items-center justify-center">
-              <iconify-icon icon="lucide:user" width="16" height="16" class="text-accent"></iconify-icon>
-            </div>
-            <div>
-              <span class="block text-sm font-medium text-coffee">Sarah M.</span>
-              <span class="block text-[10px] tracking-widest uppercase text-coffee/40">Startup Founder</span>
-            </div>
-          </div>
+          <div class="flex items-center gap-4"><div class="w-10 h-10 rounded-full bg-coffee/5 flex items-center justify-center"><iconify-icon icon="lucide:user" width="16" height="16" class="text-accent"></iconify-icon></div><div><span class="block text-sm font-medium text-coffee">Sarah M.</span><span class="block text-[10px] tracking-widest uppercase text-coffee/40">Startup Founder</span></div></div>
         </div>
         <div class="bg-cream rounded-sm p-6 md:p-8 border border-coffee/10 flex flex-col justify-between">
           <div>
-            <div class="flex gap-1 mb-6">
-              <iconify-icon icon="lucide:star" width="14" height="14" class="text-accent"></iconify-icon>
-              <iconify-icon icon="lucide:star" width="14" height="14" class="text-accent"></iconify-icon>
-              <iconify-icon icon="lucide:star" width="14" height="14" class="text-accent"></iconify-icon>
-              <iconify-icon icon="lucide:star" width="14" height="14" class="text-accent"></iconify-icon>
-              <iconify-icon icon="lucide:star" width="14" height="14" class="text-accent"></iconify-icon>
-            </div>
-            <p class="text-base font-light leading-relaxed text-coffee/70 mb-8">
-              "I needed a portfolio that felt premium without the premium price tag. Mayank got exactly what I was going for and shipped it fast. The whole experience was effortless — he just gets it."
-            </p>
+            <div class="flex gap-1 mb-6"><iconify-icon icon="lucide:star" width="14" height="14" class="text-accent"></iconify-icon><iconify-icon icon="lucide:star" width="14" height="14" class="text-accent"></iconify-icon><iconify-icon icon="lucide:star" width="14" height="14" class="text-accent"></iconify-icon><iconify-icon icon="lucide:star" width="14" height="14" class="text-accent"></iconify-icon><iconify-icon icon="lucide:star" width="14" height="14" class="text-accent"></iconify-icon></div>
+            <p class="text-base font-light leading-relaxed text-coffee/70 mb-8">"I needed a portfolio that felt premium without the premium price tag. Mayank got exactly what I was going for and shipped it fast. The whole experience was effortless — he just gets it."</p>
           </div>
-          <div class="flex items-center gap-4">
-            <div class="w-10 h-10 rounded-full bg-coffee/5 flex items-center justify-center">
-              <iconify-icon icon="lucide:user" width="16" height="16" class="text-accent"></iconify-icon>
-            </div>
-            <div>
-              <span class="block text-sm font-medium text-coffee">Raj P.</span>
-              <span class="block text-[10px] tracking-widest uppercase text-coffee/40">Creative Professional</span>
-            </div>
-          </div>
+          <div class="flex items-center gap-4"><div class="w-10 h-10 rounded-full bg-coffee/5 flex items-center justify-center"><iconify-icon icon="lucide:user" width="16" height="16" class="text-accent"></iconify-icon></div><div><span class="block text-sm font-medium text-coffee">Raj P.</span><span class="block text-[10px] tracking-widest uppercase text-coffee/40">Creative Professional</span></div></div>
         </div>
       </div>
-
-      <!-- Case Study -->
       <div class="mt-6 bg-coffee rounded-sm p-6 md:p-8">
-        <div class="flex items-center gap-3 mb-6">
-          <iconify-icon icon="lucide:file-text" width="16" height="16" class="text-accent"></iconify-icon>
-          <span class="text-[10px] tracking-widest uppercase text-cream/40">Quick Case Study</span>
-        </div>
+        <div class="flex items-center gap-3 mb-6"><iconify-icon icon="lucide:file-text" width="16" height="16" class="text-accent"></iconify-icon><span class="text-[10px] tracking-widest uppercase text-cream/40">Quick Case Study</span></div>
         <h3 class="font-syne font-medium text-xl md:text-2xl tracking-tight text-cream mb-4">Furniture Store — From Brief to Live in 5 Days</h3>
-        <p class="text-sm font-light leading-relaxed text-cream/50 mb-6">
-          A furniture retailer needed a modern e-commerce presence that matched the quality of their products. Traditional agencies quoted 4–6 weeks. Using AI-assisted development, I delivered a fully responsive, conversion-optimized site in under a week — at a fraction of the cost.
-        </p>
+        <p class="text-sm font-light leading-relaxed text-cream/50 mb-6">A furniture retailer needed a modern e-commerce presence that matched the quality of their products. Traditional agencies quoted 4–6 weeks. Using AI-assisted development, I delivered a fully responsive, conversion-optimized site in under a week — at a fraction of the cost.</p>
         <div class="flex flex-wrap gap-6">
-          <div>
-            <span class="block font-syne font-medium text-3xl text-cream">5</span>
-            <span class="text-[10px] tracking-widest uppercase text-cream/30">Days to Launch</span>
-          </div>
+          <div><span class="block font-syne font-medium text-3xl text-cream">5</span><span class="text-[10px] tracking-widest uppercase text-cream/30">Days to Launch</span></div>
           <div class="w-px bg-cream/10"></div>
-          <div>
-            <span class="block font-syne font-medium text-3xl text-cream">100%</span>
-            <span class="text-[10px] tracking-widest uppercase text-cream/30">Responsive</span>
-          </div>
+          <div><span class="block font-syne font-medium text-3xl text-cream">100%</span><span class="text-[10px] tracking-widest uppercase text-cream/30">Responsive</span></div>
           <div class="w-px bg-cream/10"></div>
-          <div>
-            <span class="block font-syne font-medium text-3xl text-cream">3x</span>
-            <span class="text-[10px] tracking-widest uppercase text-cream/30">Faster Than Agency</span>
-          </div>
+          <div><span class="block font-syne font-medium text-3xl text-cream">3x</span><span class="text-[10px] tracking-widest uppercase text-cream/30">Faster Than Agency</span></div>
         </div>
       </div>
     </div>
@@ -576,49 +411,23 @@
 
   <!-- ======== CONTACT ======== -->
   <section id="contact" class="py-24 px-4 md:px-8 bg-coffee relative overflow-hidden reveal">
-    <div class="absolute top-8 right-8 md:top-16 md:right-16">
-      <div class="spin-med w-24 h-24 md:w-32 md:h-32 border border-cream/10 rounded-full flex items-center justify-center">
-        <iconify-icon icon="lucide:asterisk" width="20" height="20" class="text-cream/20"></iconify-icon>
-      </div>
-    </div>
+    <div class="absolute top-8 right-8 md:top-16 md:right-16"><div class="spin-med w-24 h-24 md:w-32 md:h-32 border border-cream/10 rounded-full flex items-center justify-center"><iconify-icon icon="lucide:asterisk" width="20" height="20" class="text-cream/20"></iconify-icon></div></div>
     <div class="max-w-4xl mx-auto relative z-10">
-      <div class="flex items-center gap-4 mb-12">
-        <span class="text-xs tracking-widest uppercase text-cream/40">05</span>
-        <div class="h-px flex-1 bg-cream/10"></div>
-        <span class="text-xs tracking-widest uppercase text-cream/40">Contact</span>
-      </div>
+      <div class="flex items-center gap-4 mb-12"><span class="text-xs tracking-widest uppercase text-cream/40">05</span><div class="h-px flex-1 bg-cream/10"></div><span class="text-xs tracking-widest uppercase text-cream/40">Contact</span></div>
       <h2 class="font-syne font-medium text-4xl md:text-5xl tracking-tighter text-cream mb-6">Let's Build<br>Something.</h2>
       <p class="text-base md:text-lg font-light leading-relaxed text-cream/50 mb-12 max-w-xl">If you have a project in mind — or just want to see if we'd be a good fit — send me a message. I keep things simple, move fast, and always reply.</p>
       <form id="contactForm" class="space-y-6">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div>
-            <label class="block text-[10px] tracking-widest uppercase text-cream/30 mb-2">Name</label>
-            <input type="text" name="from_name" required placeholder="Your name" class="w-full bg-transparent border-b border-cream/20 text-cream text-sm font-light py-3 placeholder:text-cream/20 transition-colors duration-150">
-          </div>
-          <div>
-            <label class="block text-[10px] tracking-widest uppercase text-cream/30 mb-2">Email</label>
-            <input type="email" name="from_email" required placeholder="you@email.com" class="w-full bg-transparent border-b border-cream/20 text-cream text-sm font-light py-3 placeholder:text-cream/20 transition-colors duration-150">
-          </div>
+          <div><label class="block text-[10px] tracking-widest uppercase text-cream/30 mb-2">Name</label><input type="text" name="from_name" required placeholder="Your name" class="w-full bg-transparent border-b border-cream/20 text-cream text-sm font-light py-3 placeholder:text-cream/20 transition-colors duration-150"></div>
+          <div><label class="block text-[10px] tracking-widest uppercase text-cream/30 mb-2">Email</label><input type="email" name="from_email" required placeholder="you@email.com" class="w-full bg-transparent border-b border-cream/20 text-cream text-sm font-light py-3 placeholder:text-cream/20 transition-colors duration-150"></div>
         </div>
-        <div>
-          <label class="block text-[10px] tracking-widest uppercase text-cream/30 mb-2">Project Details</label>
-          <textarea name="message" rows="4" required placeholder="Tell me about your project..." class="w-full bg-transparent border-b border-cream/20 text-cream text-sm font-light py-3 placeholder:text-cream/20 resize-none transition-colors duration-150"></textarea>
-        </div>
+        <div><label class="block text-[10px] tracking-widest uppercase text-cream/30 mb-2">Project Details</label><textarea name="message" rows="4" required placeholder="Tell me about your project..." class="w-full bg-transparent border-b border-cream/20 text-cream text-sm font-light py-3 placeholder:text-cream/20 resize-none transition-colors duration-150"></textarea></div>
         <div class="flex flex-wrap items-center gap-6 pt-4">
-          <button type="submit" id="sendBtn" class="inline-flex items-center gap-2 bg-cream text-coffee px-6 py-3 rounded-sm text-xs tracking-widest uppercase hover:bg-accent hover:text-cream transition-colors duration-150 cursor-grab">
-            <span id="btnText">Send Message</span>
-            <iconify-icon id="btnIcon" icon="lucide:arrow-up-right" width="14" height="14"></iconify-icon>
-          </button>
+          <button type="submit" id="sendBtn" class="inline-flex items-center gap-2 bg-cream text-coffee px-6 py-3 rounded-sm text-xs tracking-widest uppercase hover:bg-accent hover:text-cream transition-colors duration-150 cursor-grab"><span id="btnText">Send Message</span><iconify-icon id="btnIcon" icon="lucide:arrow-up-right" width="14" height="14"></iconify-icon></button>
           <div class="flex items-center gap-6 flex-wrap">
-            <a href="mailto:mayanksharmap10122@gmail.com" class="inline-flex items-center gap-2 text-cream/40 hover:text-cream transition-colors duration-150 text-xs tracking-widest uppercase">
-              <iconify-icon icon="lucide:mail" width="14" height="14"></iconify-icon> Email
-            </a>
-            <a href="https://instagram.com/Mayank_ze_34" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-cream/40 hover:text-cream transition-colors duration-150 text-xs tracking-widest uppercase">
-              <iconify-icon icon="mdi:instagram" width="14" height="14"></iconify-icon> Instagram
-            </a>
-            <a href="https://github.com/mayank-sharma2008" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-cream/40 hover:text-cream transition-colors duration-150 text-xs tracking-widest uppercase">
-              <iconify-icon icon="mdi:github" width="14" height="14"></iconify-icon> GitHub
-            </a>
+            <a href="mailto:mayanksharmap10122@gmail.com" class="inline-flex items-center gap-2 text-cream/40 hover:text-cream transition-colors duration-150 text-xs tracking-widest uppercase"><iconify-icon icon="lucide:mail" width="14" height="14"></iconify-icon> Email</a>
+            <a href="https://instagram.com/Mayank_ze_34" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-cream/40 hover:text-cream transition-colors duration-150 text-xs tracking-widest uppercase"><iconify-icon icon="mdi:instagram" width="14" height="14"></iconify-icon> Instagram</a>
+            <a href="https://github.com/mayank-sharma2008" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-cream/40 hover:text-cream transition-colors duration-150 text-xs tracking-widest uppercase"><iconify-icon icon="mdi:github" width="14" height="14"></iconify-icon> GitHub</a>
           </div>
         </div>
       </form>
@@ -628,20 +437,11 @@
   <!-- ======== FOOTER ======== -->
   <footer class="py-12 px-4 md:px-8 bg-coffee border-t border-cream/5">
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-      <div class="text-center md:text-left">
-        <span class="font-syne font-medium text-cream text-lg tracking-tight">Mayank</span>
-        <p class="text-cream/30 text-xs tracking-widest uppercase mt-1">Built sharp. Shipped fast. By Mayank.</p>
-      </div>
+      <div class="text-center md:text-left"><span class="font-syne font-medium text-cream text-lg tracking-tight">Mayank</span><p class="text-cream/30 text-xs tracking-widest uppercase mt-1">Built sharp. Shipped fast. By Mayank.</p></div>
       <div class="flex items-center gap-6">
-        <a href="mailto:mayanksharmap10122@gmail.com" class="text-cream/30 hover:text-cream transition-opacity duration-150" aria-label="Email">
-          <iconify-icon icon="lucide:mail" width="18" height="18"></iconify-icon>
-        </a>
-        <a href="https://instagram.com/Mayank_ze_34" target="_blank" rel="noopener" class="text-cream/30 hover:text-cream transition-opacity duration-150" aria-label="Instagram">
-          <iconify-icon icon="mdi:instagram" width="18" height="18"></iconify-icon>
-        </a>
-        <a href="https://github.com/mayank-sharma2008" target="_blank" rel="noopener" class="text-cream/30 hover:text-cream transition-opacity duration-150" aria-label="GitHub">
-          <iconify-icon icon="mdi:github" width="18" height="18"></iconify-icon>
-        </a>
+        <a href="mailto:mayanksharmap10122@gmail.com" class="text-cream/30 hover:text-cream transition-opacity duration-150" aria-label="Email"><iconify-icon icon="lucide:mail" width="18" height="18"></iconify-icon></a>
+        <a href="https://instagram.com/Mayank_ze_34" target="_blank" rel="noopener" class="text-cream/30 hover:text-cream transition-opacity duration-150" aria-label="Instagram"><iconify-icon icon="mdi:instagram" width="18" height="18"></iconify-icon></a>
+        <a href="https://github.com/mayank-sharma2008" target="_blank" rel="noopener" class="text-cream/30 hover:text-cream transition-opacity duration-150" aria-label="GitHub"><iconify-icon icon="mdi:github" width="18" height="18"></iconify-icon></a>
       </div>
       <p class="text-cream/20 text-xs">© 2025 Mayank. All rights reserved.</p>
     </div>
@@ -653,23 +453,14 @@
     const menuClose = document.getElementById('menuClose');
     const mobileMenu = document.getElementById('mobileMenu');
     const mobileLinks = document.querySelectorAll('.mobile-link');
-
     menuToggle.addEventListener('click', () => mobileMenu.classList.add('open'));
     menuClose.addEventListener('click', () => mobileMenu.classList.remove('open'));
-    mobileLinks.forEach(link => {
-      link.addEventListener('click', () => mobileMenu.classList.remove('open'));
-    });
+    mobileLinks.forEach(link => { link.addEventListener('click', () => mobileMenu.classList.remove('open')); });
 
-    function showToast(msg) {
-      const toast = document.getElementById('toast');
-      toast.textContent = msg;
-      toast.classList.add('show');
-      setTimeout(() => toast.classList.remove('show'), 4000);
-    }
+    function showToast(msg) { const toast = document.getElementById('toast'); toast.textContent = msg; toast.classList.add('show'); setTimeout(() => toast.classList.remove('show'), 4000); }
 
     const EMAILJS_SERVICE_ID = 'service_gdyevtq';
     const EMAILJS_TEMPLATE_ID = 'template_otqlids';
-
     const contactForm = document.getElementById('contactForm');
     const sendBtn = document.getElementById('sendBtn');
     const btnText = document.getElementById('btnText');
@@ -677,53 +468,19 @@
 
     contactForm.addEventListener('submit', function(e) {
       e.preventDefault();
-      const name = this.from_name.value.trim();
-      const email = this.from_email.value.trim();
-      const message = this.message.value.trim();
-
+      const name = this.from_name.value.trim(); const email = this.from_email.value.trim(); const message = this.message.value.trim();
       if (!name || !email || !message) { showToast('Please fill in all fields.'); return; }
-
-      sendBtn.classList.add('btn-sending');
-      btnText.textContent = 'Sending...';
-      btnIcon.setAttribute('icon', 'lucide:loader-2');
-      btnIcon.classList.add('animate-spin');
-
-      emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
-        from_name: name, from_email: email, message: message,
-      })
-      .then(function() {
-        showToast('✓ Message sent! I\'ll get back to you soon.');
-        contactForm.reset();
-      })
-      .catch(function(error) {
-        console.error('EmailJS error:', error);
-        showToast('Something went wrong. Please try again or email me directly.');
-      })
-      .finally(function() {
-        sendBtn.classList.remove('btn-sending');
-        btnText.textContent = 'Send Message';
-        btnIcon.setAttribute('icon', 'lucide:arrow-up-right');
-        btnIcon.classList.remove('animate-spin');
-      });
+      sendBtn.classList.add('btn-sending'); btnText.textContent = 'Sending...'; btnIcon.setAttribute('icon', 'lucide:loader-2'); btnIcon.classList.add('animate-spin');
+      emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, { from_name: name, from_email: email, message: message })
+      .then(function() { showToast('✓ Message sent! I\'ll get back to you soon.'); contactForm.reset(); })
+      .catch(function(error) { console.error('EmailJS error:', error); showToast('Something went wrong. Please try again or email me directly.'); })
+      .finally(function() { sendBtn.classList.remove('btn-sending'); btnText.textContent = 'Send Message'; btnIcon.setAttribute('icon', 'lucide:arrow-up-right'); btnIcon.classList.remove('animate-spin'); });
     });
 
     const revealElements = document.querySelectorAll('.reveal');
-    function checkReveal() {
-      revealElements.forEach(el => {
-        const rect = el.getBoundingClientRect();
-        if (rect.top < window.innerHeight * 0.85) { el.classList.add('visible'); }
-      });
-    }
-    window.addEventListener('scroll', checkReveal);
-    window.addEventListener('load', checkReveal);
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) { target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
-      });
-    });
+    function checkReveal() { revealElements.forEach(el => { const rect = el.getBoundingClientRect(); if (rect.top < window.innerHeight * 0.85) { el.classList.add('visible'); } }); }
+    window.addEventListener('scroll', checkReveal); window.addEventListener('load', checkReveal);
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => { anchor.addEventListener('click', function(e) { e.preventDefault(); const target = document.querySelector(this.getAttribute('href')); if (target) { target.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });
   </script>
 </body>
 </html>
