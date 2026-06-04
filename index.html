@@ -9,7 +9,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght_300;400;500;600&family=Syne:wght_400;500;600;700&display=swap" rel="stylesheet">
 
   <script>
     tailwind.config = {
@@ -127,7 +127,6 @@
       <a href="#about" class="nav-link text-cream text-xs tracking-widest uppercase opacity-60 hover:opacity-100">About</a>
       <a href="#skills" class="nav-link text-cream text-xs tracking-widest uppercase opacity-60 hover:opacity-100">Skills</a>
       <a href="#projects" class="nav-link text-cream text-xs tracking-widest uppercase opacity-60 hover:opacity-100">Projects</a>
-      <a href="#testimonials" class="nav-link text-cream text-xs tracking-widest uppercase opacity-60 hover:opacity-100">Praise</a>
       <a href="#contact" class="nav-link text-cream text-xs tracking-widest uppercase opacity-60 hover:opacity-100">Contact</a>
     </div>
     <button id="menuToggle" class="md:hidden text-cream" aria-label="Open menu">
@@ -141,7 +140,6 @@
     <a href="#about" class="mobile-link text-cream font-syne text-3xl font-medium tracking-tight">About</a>
     <a href="#skills" class="mobile-link text-cream font-syne text-3xl font-medium tracking-tight">Skills</a>
     <a href="#projects" class="mobile-link text-cream font-syne text-3xl font-medium tracking-tight">Projects</a>
-    <a href="#testimonials" class="mobile-link text-cream font-syne text-3xl font-medium tracking-tight">Praise</a>
     <a href="#contact" class="mobile-link text-cream font-syne text-3xl font-medium tracking-tight">Contact</a>
   </div>
 
@@ -196,11 +194,7 @@
   <!-- ======== ABOUT ======== -->
   <section id="about" class="py-24 px-4 md:px-8 reveal">
     <div class="max-w-7xl mx-auto">
-      <div class="flex items-center gap-4 mb-12">
-        <span class="text-xs tracking-widest uppercase text-coffee/40">01</span>
-        <div class="h-px flex-1 bg-coffee/10"></div>
-        <span class="text-xs tracking-widest uppercase text-coffee/40">About</span>
-      </div>
+      <div class="flex items-center gap-4 mb-12"><span class="text-xs tracking-widest uppercase text-coffee/40">01</span><div class="h-px flex-1 bg-coffee/10"></div><span class="text-xs tracking-widest uppercase text-coffee/40">About</span></div>
       <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
         <div class="md:col-span-5">
           <div class="aspect-[3/4] rounded-sm overflow-hidden border border-coffee/10">
@@ -277,7 +271,7 @@
 
       <div class="space-y-6">
 
-        <!-- PROJECT 1: Furniture Store (LIVE) — Image Left -->
+        <!-- PROJECT 1: Furniture Store -->
         <div class="project-card group border border-coffee/10 rounded-sm overflow-hidden hover:bg-sub1 transition-colors duration-150 cursor-grab">
           <div class="grid grid-cols-1 md:grid-cols-12 gap-0">
             <div class="md:col-span-5 overflow-hidden">
@@ -300,7 +294,7 @@
           </div>
         </div>
 
-        <!-- PROJECT 2: Elevon (LIVE) — Image Right -->
+        <!-- PROJECT 2: Elevon -->
         <div class="project-card group border border-coffee/10 rounded-sm overflow-hidden hover:bg-sub1 transition-colors duration-150 cursor-grab">
           <div class="grid grid-cols-1 md:grid-cols-12 gap-0">
             <div class="md:col-span-5 overflow-hidden md:order-last">
@@ -323,7 +317,7 @@
           </div>
         </div>
 
-        <!-- PROJECT 3: WriteAI (LIVE) — Image Left -->
+        <!-- PROJECT 3: WriteAI -->
         <div class="project-card group border border-coffee/10 rounded-sm overflow-hidden hover:bg-sub1 transition-colors duration-150 cursor-grab">
           <div class="grid grid-cols-1 md:grid-cols-12 gap-0">
             <div class="md:col-span-5 overflow-hidden">
@@ -346,7 +340,7 @@
           </div>
         </div>
 
-        <!-- PROJECT 4: More (LIVE) — Image Right -->
+        <!-- PROJECT 4: More -->
         <div class="project-card group border border-coffee/10 rounded-sm overflow-hidden hover:bg-sub1 transition-colors duration-150 cursor-grab">
           <div class="grid grid-cols-1 md:grid-cols-12 gap-0">
             <div class="md:col-span-5 overflow-hidden md:order-last">
@@ -373,47 +367,11 @@
     </div>
   </section>
 
-  <!-- ======== TESTIMONIALS ======== -->
-  <section id="testimonials" class="py-24 px-4 md:px-8 bg-sub1 reveal">
-    <div class="max-w-7xl mx-auto">
-      <div class="flex items-center gap-4 mb-12"><span class="text-xs tracking-widest uppercase text-coffee/40">04</span><div class="h-px flex-1 bg-coffee/10"></div><span class="text-xs tracking-widest uppercase text-coffee/40">Praise</span></div>
-      <h2 class="font-syne font-medium text-4xl md:text-5xl tracking-tighter text-coffee mb-16">Kind Words<br>From Clients.</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="bg-cream rounded-sm p-6 md:p-8 border border-coffee/10 flex flex-col justify-between">
-          <div>
-            <div class="flex gap-1 mb-6"><iconify-icon icon="lucide:star" width="14" height="14" class="text-accent"></iconify-icon><iconify-icon icon="lucide:star" width="14" height="14" class="text-accent"></iconify-icon><iconify-icon icon="lucide:star" width="14" height="14" class="text-accent"></iconify-icon><iconify-icon icon="lucide:star" width="14" height="14" class="text-accent"></iconify-icon><iconify-icon icon="lucide:star" width="14" height="14" class="text-accent"></iconify-icon></div>
-            <p class="text-base font-light leading-relaxed text-coffee/70 mb-8">"Mayank delivered our landing page in under a week. The process was smooth, communication was clear, and the final site looked sharper than we imagined. He genuinely cares about getting it right."</p>
-          </div>
-          <div class="flex items-center gap-4"><div class="w-10 h-10 rounded-full bg-coffee/5 flex items-center justify-center"><iconify-icon icon="lucide:user" width="16" height="16" class="text-accent"></iconify-icon></div><div><span class="block text-sm font-medium text-coffee">Sarah M.</span><span class="block text-[10px] tracking-widest uppercase text-coffee/40">Startup Founder</span></div></div>
-        </div>
-        <div class="bg-cream rounded-sm p-6 md:p-8 border border-coffee/10 flex flex-col justify-between">
-          <div>
-            <div class="flex gap-1 mb-6"><iconify-icon icon="lucide:star" width="14" height="14" class="text-accent"></iconify-icon><iconify-icon icon="lucide:star" width="14" height="14" class="text-accent"></iconify-icon><iconify-icon icon="lucide:star" width="14" height="14" class="text-accent"></iconify-icon><iconify-icon icon="lucide:star" width="14" height="14" class="text-accent"></iconify-icon><iconify-icon icon="lucide:star" width="14" height="14" class="text-accent"></iconify-icon></div>
-            <p class="text-base font-light leading-relaxed text-coffee/70 mb-8">"I needed a portfolio that felt premium without the premium price tag. Mayank got exactly what I was going for and shipped it fast. The whole experience was effortless — he just gets it."</p>
-          </div>
-          <div class="flex items-center gap-4"><div class="w-10 h-10 rounded-full bg-coffee/5 flex items-center justify-center"><iconify-icon icon="lucide:user" width="16" height="16" class="text-accent"></iconify-icon></div><div><span class="block text-sm font-medium text-coffee">Raj P.</span><span class="block text-[10px] tracking-widest uppercase text-coffee/40">Creative Professional</span></div></div>
-        </div>
-      </div>
-      <div class="mt-6 bg-coffee rounded-sm p-6 md:p-8">
-        <div class="flex items-center gap-3 mb-6"><iconify-icon icon="lucide:file-text" width="16" height="16" class="text-accent"></iconify-icon><span class="text-[10px] tracking-widest uppercase text-cream/40">Quick Case Study</span></div>
-        <h3 class="font-syne font-medium text-xl md:text-2xl tracking-tight text-cream mb-4">Furniture Store — From Brief to Live in 5 Days</h3>
-        <p class="text-sm font-light leading-relaxed text-cream/50 mb-6">A furniture retailer needed a modern e-commerce presence that matched the quality of their products. Traditional agencies quoted 4–6 weeks. Using AI-assisted development, I delivered a fully responsive, conversion-optimized site in under a week — at a fraction of the cost.</p>
-        <div class="flex flex-wrap gap-6">
-          <div><span class="block font-syne font-medium text-3xl text-cream">5</span><span class="text-[10px] tracking-widest uppercase text-cream/30">Days to Launch</span></div>
-          <div class="w-px bg-cream/10"></div>
-          <div><span class="block font-syne font-medium text-3xl text-cream">100%</span><span class="text-[10px] tracking-widest uppercase text-cream/30">Responsive</span></div>
-          <div class="w-px bg-cream/10"></div>
-          <div><span class="block font-syne font-medium text-3xl text-cream">3x</span><span class="text-[10px] tracking-widest uppercase text-cream/30">Faster Than Agency</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- ======== CONTACT ======== -->
   <section id="contact" class="py-24 px-4 md:px-8 bg-coffee relative overflow-hidden reveal">
     <div class="absolute top-8 right-8 md:top-16 md:right-16"><div class="spin-med w-24 h-24 md:w-32 md:h-32 border border-cream/10 rounded-full flex items-center justify-center"><iconify-icon icon="lucide:asterisk" width="20" height="20" class="text-cream/20"></iconify-icon></div></div>
     <div class="max-w-4xl mx-auto relative z-10">
-      <div class="flex items-center gap-4 mb-12"><span class="text-xs tracking-widest uppercase text-cream/40">05</span><div class="h-px flex-1 bg-cream/10"></div><span class="text-xs tracking-widest uppercase text-cream/40">Contact</span></div>
+      <div class="flex items-center gap-4 mb-12"><span class="text-xs tracking-widest uppercase text-cream/40">04</span><div class="h-px flex-1 bg-cream/10"></div><span class="text-xs tracking-widest uppercase text-cream/40">Contact</span></div>
       <h2 class="font-syne font-medium text-4xl md:text-5xl tracking-tighter text-cream mb-6">Let's Build<br>Something.</h2>
       <p class="text-base md:text-lg font-light leading-relaxed text-cream/50 mb-12 max-w-xl">If you have a project in mind — or just want to see if we'd be a good fit — send me a message. I keep things simple, move fast, and always reply.</p>
       <form id="contactForm" class="space-y-6">
